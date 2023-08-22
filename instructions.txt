@@ -1,0 +1,6 @@
+1. Make changes
+2. Change the version number in setup.py
+3. run python setup.py sdist bdist_wheel (or python -m build)
+4. run twine upload dist/*
+5. download the new version of the package from pip again (pip install cbs-hist-downloader==new_vers)
+6. Commit the stuff to github

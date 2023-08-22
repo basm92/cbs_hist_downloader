@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: cbs-hist-downloader
+Version: 1.0.2
+Summary: A python program for downloading images from CBS historisch.
+Home-page: https://github.com/basm92/cbs_hist_downloader
+Author: Bas Machieslen
+Author-email: basmachielsen@live.nl
+Project-URL: Bug Tracker, https://github.com/basm92/cbs_hist_downloader/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# cbs_hist_downloader
+
+A Python-based tool using Selenium to download books to your harddrive rather than accessing the pictures through the API at historisch.cbs.nl
+
+## Dependencies
+
+Selenium (`pip install selenium`), time, os, webdriver-manager (`pip install webdriver-manager`)
+
+## Example how to use:
+
+In the console:
+
+```
+pip install cbs_hist_downloader
+```
+
+After installation, in a python environment, you start off with the first URL of the book/volume you want to download:
+
+```{python}
+import cbs_hist_downloader as chd
+
+url = "https://historisch.cbs.nl/detail.php?nav_id=2-1&index=10&id=395291474"
+
+chd.scrape_book(url)
+```
+
+The files will be downloaded to your Downloads folder. 
+
+
+## Suggestions / Comments
+
+a dot h dot machielsen at uu dot nl
